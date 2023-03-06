@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Troupe Six" modversion="1.0.9" corepackage="False" steamworkshopid="2803272596" gameversion="0.17.15.0">
+  <Item file="%ModDir%/Clothes.xml" />
+  <Other file="%ModDir%/Assistant_tramp_male.png" />
+  <Other file="%ModDir%/captain_ringleader_male.png" />
+  <Other file="%ModDir%/engineer_harlequin_male.png" />
+  <Other file="%ModDir%/mechanic_pierrot_male.png" />
+  <Other file="%ModDir%/Medic_mime_male.png" />
+  <Other file="%ModDir%/SecurityOfficer_jester_male.png" />
+  <Other file="%ModDir%/Assistant_tramp_female.png" />
+  <Other file="%ModDir%/captain_ringleader_female.png" />
+  <Other file="%ModDir%/engineer_harlequin_female.png" />
+  <Other file="%ModDir%/mechanic_pierrot_female.png" />
+  <Other file="%ModDir%/Medic_mime_female.png" />
+  <Other file="%ModDir%/SecurityOfficer_jester_female.png" />
+</contentpackage>

@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <!--CLOTHES-->
+  <Item name="" identifier="assistantclothes" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.125" />
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Assistant Clothes Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="383,274,128,110" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="6,363,124,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Assistant's Uniform Torso" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Assistant's Uniform Right Hand" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Assistant's Uniform Left Hand" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Assistant's Uniform Left Lower Arm" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Assistant's Uniform Right Lower Arm" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Assistant's Uniform Left Upper Arm" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Assistant's Uniform Right Upper Arm" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Assistant's Uniform Waist" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Assistant's Uniform Right Thigh" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Assistant's Uniform Left Thigh" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Assistant's Uniform Right Leg" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Assistant's Uniform Left Leg" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Assistant's Uniform Right Shoe" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Assistant's Uniform Left Shoe" texture="%ModDir%/Assistant_tramp_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <SkillModifier skillidentifier="electrical" skillvalue="5" />
+      <SkillModifier skillidentifier="helm" skillvalue="5" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="5" />
+      <SkillModifier skillidentifier="medical" skillvalue="5" />
+      <SkillModifier skillidentifier="weapons" skillvalue="5" />
+    </Wearable>
+  </Item>
+  <Item name="" identifier="captainsuniform1" aliases="captainsuniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Captain's Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,27,128,101" origin="0.5,0.5" />
+    <Sprite name="Captain's Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="247,209,125,77" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Captain's Uniform 1 Torso" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Right Hand" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Left Hand" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Right Lower Arm" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Left Lower Arm" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Right Upper Arm" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Left Upper Arm" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Waist" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Right Thigh" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Left Thigh" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Right Leg" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Left Leg" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Left Shoe" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 1 Right Shoe" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+    </Wearable>
+  </Item>
+  <Item name="" identifier="captainsuniform2" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Captain's Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,27,128,101" origin="0.5,0.5" />
+    <Sprite name="Captain's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="375,225,124,61" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Captain's Uniform 2 Torso" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 2 Right Hand" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 2 Left Hand" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 2 Right Lower Arm" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 2 Left Lower Arm" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 2 Right Upper Arm" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 2 Left Upper Arm" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 2 Waist" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 2 Right Thigh" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 2 Left Thigh" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 2 Right Leg" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 2 Left Leg" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 2 Left Shoe" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 2 Right Shoe" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+    </Wearable>
+  </Item>
+  <Item name="" identifier="captainsuniform3" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Captain's Uniform 3 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="255,27,128,101" origin="0.5,0.5" />
+    <Sprite name="Captain's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="244,292,126,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Captain's Uniform 3 Torso" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 3 Right Hand" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 3 Left Hand" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 3 Right Lower Arm" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 3 Left Lower Arm" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 3 Right Upper Arm" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 3 Left Upper Arm" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 3 Waist" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 3 Right Thigh" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 3 Left Thigh" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 3 Right Leg" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 3 Left Leg" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 3 Left Shoe" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Captain's Uniform 3 Right Shoe" texture="%ModDir%/captain_ringleader_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+    </Wearable>
+  </Item>
+  <Item name="" identifier="orangejumpsuit1" aliases="orangejumpsuit" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.125" />
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Engineer Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,150,128,107" origin="0.5,0.5" />
+    <Sprite name="Engineer Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="375,293,121,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Engineer's Uniform 1 Torso" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 1 Right Hand" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 1 Left Hand" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 1 Right Lower Arm" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 1 Left Lower Arm" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 1 Right Upper Arm" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 1 Left Upper Arm" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 1 Waist" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 1 Right Thigh" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 1 Left Thigh" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 1 Right Leg" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 1 Left Leg" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 1 Left Shoe" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 1 Right Shoe" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.4" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" />
+    </Wearable>
+  </Item>
+  <Item name="" identifier="orangejumpsuit2" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.125" />
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Engineer Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="384,27,127,101" origin="0.5,0.5" />
+    <Sprite name="Engineer Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="511,293,119,57" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Engineer's Uniform 2 Torso" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 2 Right Hand" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 2 Left Hand" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 2 Right Lower Arm" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 2 Left Lower Arm" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 2 Right Upper Arm" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 2 Left Upper Arm" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 2 Waist" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 2 Right Thigh" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 2 Left Thigh" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 2 Right Leg" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 2 Left Leg" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 2 Left Shoe" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Engineer's Uniform 2 Right Shoe" texture="%ModDir%/engineer_harlequin_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds" damagemultiplier="0.9" deflectprojectiles="false" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" />
+    </Wearable>
+  </Item>
+  <Item name="" identifier="securityuniform1" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Security Officer's Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="383,151,129,105" origin="0.5,0.5" />
+    <Sprite name="Security Officer's Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="509,151,121,66" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Security Officer's Uniform 1 Torso" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Right Hand" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Left Hand" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Left Lower Arm" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Right Lower Arm" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Left Upper Arm" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Right Upper Arm" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Waist" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Right Thigh" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Left Thigh" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Right Leg" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Left Leg" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Right Shoe" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Left Shoe" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+    </Wearable>
+  </Item>
+  <Item name="" identifier="securityuniform2" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Security Officer's Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,274,128,110" origin="0.5,0.5" />
+    <Sprite name="Security Officer's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Security Officer's Uniform 2 Torso" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 2 Right Hand" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 2 Left Hand" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 2 Left Lower Arm" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 2 Right Lower Arm" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 2 Left Upper Arm" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 2 Right Upper Arm" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 2 Waist" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 2 Right Thigh" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 2 Left Thigh" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 2 Right Leg" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 2 Left Leg" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 2 Right Shoe" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 2 Left Shoe" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+    </Wearable>
+  </Item>
+  <Item name="" identifier="securityuniform3" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Security Officer's Uniform 3 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,402,128,110" origin="0.5,0.5" />
+    <Sprite name="Security Officer's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="767,149,124,69" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Security Officer's Uniform 3 Torso" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 3 Right Hand" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 3 Left Hand" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 3 Left Lower Arm" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 3 Right Lower Arm" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 3 Left Upper Arm" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 3 Right Upper Arm" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 3 Waist" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 3 Right Thigh" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 3 Left Thigh" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 3 Right Leg" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 3 Left Leg" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 3 Right Shoe" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 3 Left Shoe" texture="%ModDir%/SecurityOfficer_jester_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+    </Wearable>
+  </Item>
+  <Item name="" identifier="bluejumpsuit1" aliases="bluejumpsuit" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.125" />
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Mechanic Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,274,127,110" origin="0.5,0.5" />
+    <Sprite name="Mechanic Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="513,9,117,55" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Mechanic's Uniform 1 Torso" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 1 Right Hand" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 1 Left Hand" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 1 Right Lower Arm" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 1 Left Lower Arm" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 1 Right Upper Arm" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 1 Left Upper Arm" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 1 Waist" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 1 Right Thigh" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 1 Left Thigh" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 1 Right Leg" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 1 Left Leg" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 1 Left Shoe" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 1 Right Shoe" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.5" />
+    </Wearable>
+  </Item>
+  <Item name="" identifier="bluejumpsuit2" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.125" />
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Mechanic Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="129,274,128,110" origin="0.5,0.5" />
+    <Sprite name="Mechanic Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="637,7,121,56" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Mechanic's Uniform 2 Torso" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 2 Right Hand" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 2 Left Hand" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 2 Right Lower Arm" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 2 Left Lower Arm" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 2 Right Upper Arm" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 2 Left Upper Arm" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 2 Waist" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 2 Right Thigh" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 2 Left Thigh" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 2 Right Leg" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 2 Left Leg" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 2 Left Shoe" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Mechanic's Uniform 2 Right Shoe" texture="%ModDir%/mechanic_pierrot_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.5" />
+    </Wearable>
+  </Item>
+  <Item name="" identifier="doctorsuniform1" aliases="doctorsuniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Medic Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,151,128,105" origin="0.5,0.5" />
+    <Sprite name="Medic Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="504,84,123,60" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Medic Uniform 1 Torso" texture="%ModDir%/Medic_mime_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 1 Right Hand" texture="%ModDir%/Medic_mime_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 1 Left Hand" texture="%ModDir%/Medic_mime_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 1 Right Lower Arm" texture="%ModDir%/Medic_mime_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 1 Left Lower Arm" texture="%ModDir%/Medic_mime_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 1 Right Upper Arm" texture="%ModDir%/Medic_mime_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 1 Left Upper Arm" texture="%ModDir%/Medic_mime_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 1 Waist" texture="%ModDir%/Medic_mime_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 1 Right Thigh" texture="%ModDir%/Medic_mime_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 1 Left Thigh" texture="%ModDir%/Medic_mime_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 1 Right Leg" texture="%ModDir%/Medic_mime_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 1 Left Leg" texture="%ModDir%/Medic_mime_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 1 Right Shoe" texture="%ModDir%/Medic_mime_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 1 Left Shoe" texture="%ModDir%/Medic_mime_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds" damagemultiplier="0.9" />
+    </Wearable>
+    <ItemContainer capacity="3">
+      <Containable items="chem,medical" excludeditems="toolbox,toolbelt" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="doctorsuniform2" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Medic Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,151,128,105" origin="0.5,0.5" />
+    <Sprite name="Medic Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="640,70,124,74" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Medic Uniform 2 Torso" texture="%ModDir%/Medic_mime_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 2 Right Hand" texture="%ModDir%/Medic_mime_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 2 Left Hand" texture="%ModDir%/Medic_mime_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 2 Right Lower Arm" texture="%ModDir%/Medic_mime_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 2 Left Lower Arm" texture="%ModDir%/Medic_mime_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 2 Right Upper Arm" texture="%ModDir%/Medic_mime_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 2 Left Upper Arm" texture="%ModDir%/Medic_mime_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 2 Waist" texture="%ModDir%/Medic_mime_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 2 Right Thigh" texture="%ModDir%/Medic_mime_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 2 Left Thigh" texture="%ModDir%/Medic_mime_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 2 Right Leg" texture="%ModDir%/Medic_mime_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 2 Left Leg" texture="%ModDir%/Medic_mime_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 2 Right Shoe" texture="%ModDir%/Medic_mime_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Medic Uniform 2 Left Shoe" texture="%ModDir%/Medic_mime_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+</Override>
